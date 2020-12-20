@@ -13,3 +13,9 @@ func TestHyperlink(t *testing.T) {
 		t.Fail()
 	}
 }
+
+func TestFloatingPointMath(t *testing.T) {
+	if floatingPointMath(0.3, 0.122) != 2.459016393442623 {
+		t.Fail()
+	}
+}
