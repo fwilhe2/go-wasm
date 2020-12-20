@@ -2,5 +2,14 @@ package main
 
 import "testing"
 
-func TestA(t *testing.T) {
+func TestTitle(t *testing.T) {
+	if title("abc") != "# abc" {
+		t.Fail()
+	}
+}
+
+func TestHyperlink(t *testing.T) {
+	if hyperlink("Some ting", "https://example.com/abc") != "[Some ting](https://example.com/abc)" {
+		t.Fail()
+	}
 }
